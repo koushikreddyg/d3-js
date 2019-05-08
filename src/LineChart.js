@@ -80,7 +80,7 @@ class App extends React.Component {
 
     const line = d3.line().x(d => x(new Date(d.date))).y(d => y(d.distance))
     const path = graph.append("path");
-    path.data([data]).attr("fill", "none").attr("stroke", "red").attr("strokeWidth", 2).attr("d", line)
+    path.data([data]).attr("fill", "none").attr("stroke", "red").attr("strokeWidth", 2).attr("d", line);
 
     const dottedLine= graph.append('g').style("opacity",0);
 
